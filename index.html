@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva de Livros</title>
+
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card-img-top {
+            margin: 15px; 
+            width: 40%; 
+            height: 250px; 
+            object-fit: cover; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .card {
+            padding: 20px; 
+            height: 400px; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between; 
+        }
+        .card-body {
+            text-align: center; 
+            flex-grow: 1; 
+        }
+        .title-container {
+            background-color: #000; 
+            color: #fff; 
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 text-center title-container">
+                <h1>Livros</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3 p-3"> <!-- Adicionaei o padding no container -->
+        <div class="row">
+            <!-- Primeira caixa -->
+            <div class="col-md-6 mb-3 mx-2"> <!-- Adicionei a margem horizontal -->
+                <div class="card">
+                    <img src="https://livrariascuritiba.vteximg.com.br/arquivos/ids/2185718-1000-1000/lv516291_1.jpg?v=638580524849770000" class="card-img-top img-fluid" alt="Capa do Livro 1"> <!-- Adicionei a class img-fluid tentar deixar a imagem responsiva-->
+                    <div class="card-body">
+                        <h5 class="card-title">O Livro do Bill</h5>
+                        <p class="card-text">Autor: Alex Hirsch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda caixa -->
+            <div class="col-md-6 mb-3 mx-2"> <!-- Adicionei a margem horizontal -->
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/91OvTwFvWKL._SY425_.jpg" class="card-img-top img-fluid" alt="Capa do Livro 2"> <!-- Adicionando a classe img-fluid tentar deixar a imagem responsiva tmb-->
+                    <div class="card-body">
+                        <h5 class="card-title">O Diário perdido de Gravity Falls</h5>
+                        <p class="card-text">Autor: Alex Hirsch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link do Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
