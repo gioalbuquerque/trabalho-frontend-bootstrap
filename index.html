@@ -4,55 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Responsiva de Livros</title>
-
     <!-- Link do Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Link para o CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
     <style>
         .card-img-top {
-            margin: 15px;
-            width: 40%; 
-            height: 250px; 
-            object-fit: cover; 
-            display: block; 
-            margin-left: auto; 
-            margin-right: auto; 
+            margin: 15px; /* Margem igual dos 4 lados */
+            width: 40%; /* Ajusta a largura da imagem */
+            height: 250px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+            margin-left: auto; /* Centraliza a imagem à esquerda */
+            margin-right: auto; /* Centraliza a imagem à direita */
         }
         .card {
-            padding: 20px; 
-            height: 400px; 
+            padding: 20px; /* Padding para o card */
+            border-radius: 15px; /* Arredondar os cantos */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            height: 400px; /* Altura fixa para os cards */
             display: flex;
-            flex-direction: column; 
-            justify-content: space-between; 
+            flex-direction: column; /* Permite o alinhamento vertical dos elementos */
+            justify-content: space-between; /* Espaça uniformemente os elementos dentro do card */
         }
         .card-body {
-            text-align: center; 
-            flex-grow: 1; 
+            text-align: center; /* Centraliza o texto */
+            flex-grow: 1; /* Permite que o conteúdo ocupe o espaço disponível */
         }
         .title-container {
-            background-color: #000; 
-            color: #fff; 
-            padding: 20px; 
+            background-color: #000; /* Cor de fundo preta */
+            color: #fff; /* Cor do texto em branco */
+            padding: 20px; /* Padding para o título */
+            text-align: center; /* Centraliza o título */
+        }
+        .separator {
+            border: none; /* Remove a borda padrão */
+            height: 2px; /* Altura da linha */
+            background-color: #fff; /* Cor da linha branca */
+            margin: 10px auto; /* Centraliza e adiciona margem */
+            width: 50%; /* Largura da linha */
         }
     </style>
 </head>
 <body>
     <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-12 text-center title-container">
+            <div class="col-12 title-container">
                 <h1>Livros</h1>
+                <hr class="separator"> <!-- Linha branca abaixo do título -->
             </div>
         </div>
     </div>
     
-    <div class="container mt-3 p-3"> <!-- Adicionaei o padding no container -->
+    <div class="container mt-3">
         <div class="row">
             <!-- Primeira caixa -->
-            <div class="col-md-6 mb-3 mx-2"> <!-- Adicionei a margem horizontal -->
+            <div class="col-md-6 mb-3"> <!-- Adicionando margem inferior -->
                 <div class="card">
-                    <img src="https://livrariascuritiba.vteximg.com.br/arquivos/ids/2185718-1000-1000/lv516291_1.jpg?v=638580524849770000" class="card-img-top img-fluid" alt="Capa do Livro 1"> <!-- Adicionei a class img-fluid tentar deixar a imagem responsiva-->
+                    <img src="https://livrariascuritiba.vteximg.com.br/arquivos/ids/2185718-1000-1000/lv516291_1.jpg?v=638580524849770000" class="card-img-top" alt="Capa do Livro 1">
                     <div class="card-body">
                         <h5 class="card-title">O Livro do Bill</h5>
                         <p class="card-text">Autor: Alex Hirsch</p>
@@ -61,9 +70,9 @@
             </div>
 
             <!-- Segunda caixa -->
-            <div class="col-md-6 mb-3 mx-2"> <!-- Adicionei a margem horizontal -->
+            <div class="col-md-6 mb-3"> <!-- Adicionando margem inferior -->
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/91OvTwFvWKL._SY425_.jpg" class="card-img-top img-fluid" alt="Capa do Livro 2"> <!-- Adicionando a classe img-fluid tentar deixar a imagem responsiva tmb-->
+                    <img src="https://m.media-amazon.com/images/I/91OvTwFvWKL._SY425_.jpg" class="card-img-top" alt="Capa do Livro 2">
                     <div class="card-body">
                         <h5 class="card-title">O Diário perdido de Gravity Falls</h5>
                         <p class="card-text">Autor: Alex Hirsch</p>
