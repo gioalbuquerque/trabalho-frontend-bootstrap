@@ -1,6 +1,6 @@
 .card {
     border-radius: 15px; /* Arredondar os cantos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     
 }
 
